@@ -30,10 +30,12 @@ export function Lamp(props: JSX.IntrinsicElements['group']) {
         material={materials.White}
       />
 
+      <ambientLight intensity={1} color="#f28b0c" />
+
       <spotLight
         ref={light}
-        position={[1.8, 8, 0]}
-        angle={0.44}
+        position={[1.8, 7.1, 0]}
+        angle={0.5}
         penumbra={0.02}
         intensity={40}
         distance={4}

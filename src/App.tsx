@@ -6,13 +6,13 @@ import { Lamp } from './Lamp'
 export default function App() {
   return (
     <Canvas shadows camera={{ position: [0, 0, 1.8] }}>
-      <Environment files="./img/forest_slope_1k.hdr" />
+      {/* <Environment files="./img/forest_slope_1k.hdr" /> */}
       <mesh
         rotation={[-Math.PI / 2, 0, 0]} // rotate plane to lay flat (horizontal)
         position={[0, -0.5, 0]} // slightly below your lamp
         receiveShadow>
         <planeGeometry args={[20, 20]} /> {/* size of the floor */}
-        <meshStandardMaterial color="#000" />
+        <meshStandardMaterial color="#0d0007" />
       </mesh>
 
       <Lamp position={[-0.8, -0.5, -4]} scale={0.1} />
